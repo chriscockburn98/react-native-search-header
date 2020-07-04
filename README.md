@@ -175,6 +175,8 @@ Below are the props you can pass to the React Component to customize the SearchH
 | onBlur                              | function | None             | This function is called when text input in blurred |
 | onHide                              | function | None             | This function is called right after hide animation is completed |
 | onShow                              | function | None             | This function is called right after show animation is completed |
+| darkMode                            | boolean  | false            | Enables DarkMode |
+| FilterView                          | Functional Component | None             | Add a FilterView below SearchBar |
 
 ### Style Overrides
 
