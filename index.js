@@ -25,16 +25,10 @@
 /* load search header applet */
 import React from 'react';
 
-import { SearchHeaderWithReactHooks, SearchHeaderWithReactClass } from './search-header';
+import { ForwardComponent } from './search-header';
 
 import semver from 'semver';
 
-let SearchHeader;
-
-if (semver.gte(React.version, `16.8.0`)) {
-    SearchHeader = React.forwardRef(SearchHeaderWithReactHooks);
-} else {
-    SearchHeader = SearchHeaderWithReactClass;
-}
-
-export default SearchHeader;
+// let SearchHeader = React.forwardRef(SearchHeaderWithReactHooks);
+    
+export default ForwardComponent
