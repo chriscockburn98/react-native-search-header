@@ -76,18 +76,21 @@ const DEFAULT_SEARCH_HEADER_VIEW_STYLE = {
         justifyContent: `flex-start`,
         zIndex: 10,
         elevation: 2,
+        padding: 10,
         top: 0,
         width: `100%`,
         backgroundColor: `transparent`,
         overflow: `hidden`
     },
     header: {
+		borderRadius:30,
+		backgroundColor: '#e5e4ea',
+		padding:0,
+		maxHeight: 34,
         flexGrow: 1,
         flexDirection: `row`,
         alignItems: `center`,
         justifyContent: `space-between`,
-        height: 57,
-        backgroundColor: `#fdfdfd`
     },
     action: {
         flexDirection: `row`,
@@ -116,7 +119,7 @@ const DEFAULT_SEARCH_HEADER_VIEW_STYLE = {
     input: {
         flex: 1,
         fontSize: PixelRatio.get() >= 3 ? 20 : 18,
-        fontWeight: `400`,
+		fontSize: 14,
         textAlign: `left`,
         margin: 6,
         padding: 6,
